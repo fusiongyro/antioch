@@ -33,7 +33,7 @@ Correspondence concerning GBT software should be addressed as follows:
 > import Control.Monad.Trans             (liftIO)
 > import Data.List                       (sort, nub, find)
 > import Data.Char                       (toUpper)
-> import Maybe                           (fromJust, isNothing)
+> import Data.Maybe                      (fromJust, isNothing)
 > import Database.HDBC
 > import Database.HDBC.PostgreSQL
 

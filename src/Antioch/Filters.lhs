@@ -26,7 +26,7 @@ Correspondence concerning GBT software should be addressed as follows:
 > import Antioch.Types
 > import Antioch.TimeAccounting
 > import Antioch.Utilities    (showList', dt2semester, overlie, concatMapM)
-> import Maybe
+> import Data.Maybe
 > import Data.List ((\\), sort)
 
 

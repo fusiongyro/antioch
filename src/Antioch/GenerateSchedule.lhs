@@ -29,7 +29,7 @@ Correspondence concerning GBT software should be addressed as follows:
 > import Antioch.Utilities
 > import Antioch.Score          (elevation, radecel2ha)
 > import System.Random   
-> import Maybe                  (isNothing, fromJust, isJust)
+> import Data.Maybe             (isNothing, fromJust, isJust)
 > import Data.List 
 > import Test.QuickCheck hiding (frequency)
 

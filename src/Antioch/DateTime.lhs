@@ -30,7 +30,7 @@ Correspondence concerning GBT software should be addressed as follows:
 > import Data.Time.LocalTime
 > import Database.HDBC
 > import Numeric                    (fromRat)
-> import Maybe
+> import Data.Maybe
 > import Control.Monad.Trans        (liftIO)
 > import System.Locale
 > import System.Time hiding         (toClockTime)
@@ -46,7 +46,6 @@ Correspondence concerning GBT software should be addressed as follows:
 >     arbitrary       = do
 >         offset <- choose (0, 20000) :: Gen Float
 >         return . fromMJD' $ offset + fromRational startOfTimeMJD
->     coarbitrary _ b = b
 
 So that we can use our UTCTime class with HDBC.
 

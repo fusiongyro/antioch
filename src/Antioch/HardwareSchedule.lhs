@@ -26,7 +26,7 @@ Correspondence concerning GBT software should be addressed as follows:
 > import Antioch.Types
 > import Antioch.Score
 > import Antioch.Settings (hardwareScheduleDB, dssHost, databasePort)
-> import Maybe (fromJust)
+> import Data.Maybe (fromJust)
 > import Data.List (groupBy)
 > import Database.HDBC
 > import Database.HDBC.PostgreSQL
