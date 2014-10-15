@@ -4,7 +4,7 @@
 name:                antioch
 version:             0.1.0.0
 synopsis:            Scheduler for the Green Bank Telescope
--- description:         
+description:         Scheduler for the Green Bank Telescope
 homepage:            https://github.com/nrao/antioch
 license:             GPL-3
 license-file:        LICENSE
@@ -15,19 +15,23 @@ category:            Application
 build-type:          Simple
 cabal-version:       >=1.8
 
+source-repository head
+  type:     git
+  location: git://github.com/fusiongyro/antioch
+
 executable simulate
   main-is:             Simulate.lhs
   -- other-modules:       
-  build-depends:       base ==4.6.*,
+  build-depends:       base >=4.6 && <4.8,
                        regex-compat ==0.95.*,
                        gnuplot ==0.5.*,
                        QuickCheck ==2.6.*,
                        random ==1.0.*,
                        mtl ==2.1.*,
-                       array ==0.4.*,
+                       array >=0.4 && <0.6,
                        HDBC-postgresql ==2.3.*,
-                       HDBC ==2.3.*,
-                       convertible ==1.0.*,
+                       HDBC >=2.3 && <2.5,
+                       convertible >=1.0 && < 1.2,
                        time ==1.4.*,
                        old-time ==1.1.*,
                        old-locale ==1.0.*,
